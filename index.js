@@ -1,4 +1,4 @@
-const compliment = [
+const compliments = [
     "You have a beautiful smile",
  "Your positivity is infectious.",
  "You have a heart of gold.",
@@ -25,12 +25,12 @@ const compliment = [
 
 function generateCompliment(){
     const complimentContainer = document.getElementById("complimentContainer");
-    const compliment = document.getElementById("compliment");
+    const complimentElement = document.getElementById("compliment");
     // Get random index number from array
-    let randomIndex = Math.floor(Math.random() * compliment.length);
-    let randomCompliment = compliment[randomIndex];
+    let randomIndex = Math.floor(Math.random() * compliments.length);
+    let randomCompliment = compliments[randomIndex];
 
-    compliment.innerHTML = randomCompliment;
+    complimentElement.innerHTML = randomCompliment;
     complimentContainer.style.backgroundColor = getRandomColor();
 }
 
