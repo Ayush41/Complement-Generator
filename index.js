@@ -1,0 +1,7 @@
+function generateCompliment(){
+
+}
+
+function getRandomColor(){
+    
+}
